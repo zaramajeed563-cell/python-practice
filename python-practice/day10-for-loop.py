@@ -79,3 +79,15 @@ for i in sentence:
 print(i, "-> vowels:", vowels, "consonants:", consonants)
 
 
+#nested loop for 1-5 table printing
+for table in range(1,6):
+    for value in range(1,11):
+        result=table*value
+        print(f"{table}*{value}={result}")
+    print(" ")
+
+
+    
+        
+    
+    
