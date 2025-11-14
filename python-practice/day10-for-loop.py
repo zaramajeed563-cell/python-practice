@@ -86,7 +86,13 @@ for table in range(1,6):
         print(f"{table}*{value}={result}")
     print(" ")
 
-
+#print F with nested loop
+num=[5,2,5,2,2]
+for x in range(0,len(num)):
+    for y in range(num[x]):
+        print("*"*num[x],end=" ")
+        print()
+        break
     
         
     
