@@ -45,3 +45,24 @@ for mark in marks:
 print(max)
 
 #Reverse the list WITHOUT using reverse()
+marks=[1,2,3,4]
+print("before reverse",marks)
+print("after")
+for mark in range(len(marks)-1,0,-1):
+    print(mark)
+
+#Count how many times “2” appears
+nums = [2, 3, 2, 5, 2, 8, 2]
+count=0
+for num in nums:
+    if num==2:
+        count+=1
+print(f"2 appears {count} times")
+
+#Copy a list into another new list (no shortcut)
+old_list=[1,2,3,4]
+new_list=[]
+for value in old_list:
+    new_list.append(value)
+    print(f"this is new list{new_list}")
+
