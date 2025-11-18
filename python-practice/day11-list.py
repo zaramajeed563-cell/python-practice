@@ -66,3 +66,24 @@ for value in old_list:
     new_list.append(value)
     print(f"this is new list{new_list}")
 
+#remove duplicate elements
+nums=[1,2,2,3,4,4,5]
+new_list=[]
+for i in nums:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)
+
+#Make a new list with only numbers > 10
+""" nums = [4, 12, 5, 19, 7, 25, 3]
+new_list=[]
+for i in nums:
+    if i>=10:
+        new_list.append(i)
+print(new_list) """
+
+#Create a list from 1 to 100 without typing numbers
+nums=[]
+for i in range(1,101,1):
+    nums.append(i)
+print(nums)
