@@ -75,15 +75,30 @@ for i in nums:
 print(new_list)
 
 #Make a new list with only numbers > 10
-""" nums = [4, 12, 5, 19, 7, 25, 3]
+nums = [4, 12, 5, 19, 7, 25, 3]
 new_list=[]
 for i in nums:
     if i>=10:
         new_list.append(i)
-print(new_list) """
+print(new_list)
 
 #Create a list from 1 to 100 without typing numbers
 nums=[]
 for i in range(1,101,1):
     nums.append(i)
 print(nums)
+
+#Combine two lists into one
+new_list=[]
+a = [1, 2, 3] 
+b = [4, 5, 6]
+for x in a:
+    new_list.append(x)
+for y in b:
+    new_list.append(y)
+print(new_list)
+
+#Print list items in this pattern:
+a=[3, 1, 4]
+for i in a:
+    print(i*"*")
