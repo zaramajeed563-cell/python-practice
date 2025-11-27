@@ -100,3 +100,73 @@ for i in A:
      if y<=min:
         min=y
 print(min)
+
+#Count how many even numbers exist.
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+count=0
+for row in A:
+    for i in row:
+        if i%2==0:
+            count+=1
+print(f"total even numbers are = {count}")
+
+#Count how many odd numbers exist.
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+count=0
+for row in A:
+    for i in row:
+        if i%2!=0:
+            count+=1
+print(f"total odd numbers are = {count}")
+
+#Print all numbers greater than 10.
+D = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90],
+    [100, 110, 120]
+]
+print("greater than 100:")
+#f=D[0][0]
+for row in D:
+    for i in row:
+        if i>100:
+            print(i)
+
+#Replace every even number with "EVEN" in a new 2D list.
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+new_list=[]
+for row in A:
+    new_row=[]
+    for i in row:
+        if i%2==0:
+            new_row.append("EVEN")
+        else:
+            new_row.append(i)
+    new_list.append(new_row)
+print(new_list)
+
+#Count how many times a specific number (like 5) appears in the 2D list.
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+count=0
+for row in A:
+    for i in row:
+        if i==5:
+            count+=1
+print(f"5 came for {count} time only")         
