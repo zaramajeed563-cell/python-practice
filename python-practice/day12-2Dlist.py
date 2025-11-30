@@ -200,3 +200,70 @@ for col in range(len(A[0])):
         sum+=A[row][col]
     new_list.append(sum)
 print(new_list)
+
+#Print each column on a separate line
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+for col in range(len(A[0])):
+    for row in range(len(A)):
+        print(A[row][col],end=" ")
+    print()
+
+#Print only the first column
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+for row in range(len(A)):
+    print(A[row][0])
+
+#Print only the last column
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+for row in range(len(A)):
+    print(A[row][2])
+
+#Count how many even numbers are in each column
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for col in range(len(A[0])):
+    count=0
+    for row in range(len(A)):
+            if A[row][col]%2==0:
+                count+=1
+    print(f"{col} Column {count} even")
+
+#Find the maximum number in each column
+A = [
+    [1, 2, 3],
+    [4, 11, 6],
+    [7, 8, 9]
+]
+for col in range(len(A[0])):
+    max = A[0][col]
+    for row in range(len(A)):
+            if A[row][col]>=max:
+                max=A[row][col]
+    print(max)
+
+#transpose rows into columns
+A = [
+    [1, 2, 3],
+    [4, 11, 6],
+    [7, 8, 9]
+]
+for col in range(len(A[0])):
+    for row in range(len(A)):
+        print(A[row][col],end=" ")
+    print()
