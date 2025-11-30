@@ -169,4 +169,34 @@ for row in A:
     for i in row:
         if i==5:
             count+=1
-print(f"5 came for {count} time only")         
+print(f"5 came for {count} time only")
+
+#Print the sum of each row separately.
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+new_list=[]
+sum=0
+for row in A:
+    new_row=[]
+    for i in row:
+     sum+=i
+    new_row.append(sum)
+    new_list.append(new_row)
+print(new_list)
+
+#Print the sum of each column separately.
+A = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+new_list=[]
+for col in range(len(A[0])):
+    sum=0
+    for row in range(len(A)):
+        sum+=A[row][col]
+    new_list.append(sum)
+print(new_list)
