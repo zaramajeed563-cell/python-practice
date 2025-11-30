@@ -267,3 +267,22 @@ for col in range(len(A[0])):
     for row in range(len(A)):
         print(A[row][col],end=" ")
     print()
+#sort the columns
+A = [
+    [8, 2, 3],
+    [4, 11, 6],
+    [7, 8, 9]
+]
+for col in range(len(A[0])):
+    new_list=[]
+    print()
+    for row in range(len(A)):
+        new_list.append(A[row][col]) 
+    new_list.sort() 
+    print(new_list,end=" ")
+
+
+
+
+
+
