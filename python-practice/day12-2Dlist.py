@@ -314,6 +314,33 @@ for col in range(len(A)):
 for row in A:
     print(row)
 
+#check 5 count in each column
+A = [
+    [5, 2, 3],
+    [4, 5, 5],
+    [7, 8, 5]
+]
+for col in range(len(A)):
+    count=0
+    for row in range(len(A)):
+        if A[row][col]==5:
+            count+=1
+    print(f"column {col} has {count} ")
+
+#Multiply all numbers in each column
+A = [
+    [5, 2, 3],
+    [4, 5, 5],
+    [7, 8, 5]
+]
+for col in range(len(A)):
+    v=1
+    for row in range(len(A)):
+            v=A[row][col]*v
+    print(v)
+            
+
+
     
 
 
