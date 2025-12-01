@@ -281,6 +281,40 @@ for col in range(len(A[0])):
     new_list.sort() 
     print(new_list,end=" ")
 
+# 1D sorting
+A = [8, 2, 3]
+for i in range(len(A)):
+    for j in range(len(A)-1):
+        if A[j]>=A[j+1]:
+            A[j],A[j+1]=A[j+1],A[j]
+print(A)
+
+# 2d row sorting
+A = [
+    [8, 2, 3],
+    [4, 11, 6],
+    [7, 8, 9]
+]
+for row in range(len(A)):
+    for col in range(len(A)-1):
+        if A[row][col]>=A[row][col+1]:
+            A[row][col],A[row][col+1]=A[row][col+1],A[row][col]
+print(A)
+
+# 2d column sorting
+A = [
+    [8, 2, 3],
+    [4, 11, 6],
+    [7, 8, 9]
+]
+for col in range(len(A)):
+    for row in range(len(A)-1):
+        if A[row][col]>=A[row+1][col]:
+            A[row][col],A[row+1][col]=A[row+1][col],A[row][col]
+for row in A:
+    print(row)
+
+    
 
 
 
