@@ -338,6 +338,20 @@ for col in range(len(A)):
     for row in range(len(A)):
             v=A[row][col]*v
     print(v)
+
+#If number is divisible by column index + 1, keep it otherwise replace with 0
+A = [
+    [5, 2, 3],
+    [4, 5, 5],
+    [7, 8, 5]
+]
+for col in range(len(A[0])):
+    print()
+    for row in range(len(A)):
+            if A[row][col]%(col+1)==0:
+             print(A[row][col],end=" ")
+            else:
+                print("0",end=" ")
             
 
 
