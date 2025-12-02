@@ -353,6 +353,15 @@ for col in range(len(A[0])):
             else:
                 print("0",end=" ")
             
+#write a program tu remove duplicate in the list
+A=[2,4,6,8,6,9,2]
+new_list=[]
+for i in range(len(A)):
+    if A[i] not in new_list:
+        new_list.append(A[i])
+print(new_list)
+
+
 
 
     
